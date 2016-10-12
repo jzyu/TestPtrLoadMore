@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    tools:context="github.jzyu.com.testptrloadmore.MainActivity">
+
+    <LinearLayout style="@style/TestButtonGroup">
+        <Button style="@style/TestButton" android:text="List" android:onClick="onClickTestList"/>
+        <Button style="@style/TestButton" android:text="Grid" android:onClick="onClickTestGrid"/>
+        <Button style="@style/TestButton" android:text="Staggered Grid" android:onClick="onClickTestStaggeredGrid"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="github.jzyu.com.testptrloadmore.PtrDemoActivity">
+
+    <in.srain.cube.views.ptr.PtrFrameLayout
+        android:id="@+id/ptrFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f1f1f1"
+        custom:ptr_duration_to_close="1000"
+        custom:ptr_keep_header_when_refresh="true"
+        custom:ptr_pull_to_fresh="true"
+        custom:ptr_ratio_of_header_height_to_refresh="1.2"
+        custom:ptr_resistance="1.7"
+        >
+        
+        <cn.finalteam.loadingviewfinal.RecyclerViewFinal
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/row_card_view"
+            custom:loadMoreMode="scroll"
+            />
+    </in.srain.cube.views.ptr.PtrFrameLayout>
+
+</LinearLayout>
